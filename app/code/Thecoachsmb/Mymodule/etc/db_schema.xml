@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="examples_firstmodule_post" resource="default" engine="innodb" comment="Firstmodule posts table">
+      <column xsi:type="int" name="post_id" unsigned="false" nullable="false" identity="true" comment="Post ID" />
+      <column xsi:type="varchar" name="author_name" nullable="false" length="20" comment="Author Name" />
+      <column xsi:type="varchar" name="email" nullable="false" length="20" comment="Email" />
+      <column xsi:type="varchar" name="content" nullable="false" comment="Post Content" />
+      <column xsi:type="timestamp" name="created" default="CURRENT_TIMESTAMP" />
+      <column xsi:type="timestamp" name="updated" default="CURRENT_TIMESTAMP" />
+      <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="post_id" />
+      </constraint>
+   </table>
+</schema>

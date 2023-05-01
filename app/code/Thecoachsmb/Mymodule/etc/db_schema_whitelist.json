@@ -1,0 +1,15 @@
+{
+    "examples_firstmodule_post": {
+        "column": {
+            "post_id": true,
+            "author_name": true,
+            "email": true,
+            "content": true,
+            "created": true,
+            "updated": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

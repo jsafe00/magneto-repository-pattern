@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<routes>
+    <route url="/V1/article" method="GET">
+        <service class="Thecoachsmb\Mymodule\Api\ItemRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+     <route url="/V1/article" method="POST">
+        <service class="Thecoachsmb\Mymodule\Api\ItemRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
