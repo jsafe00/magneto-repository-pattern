@@ -48,15 +48,15 @@
 ### Sample API call
 
 ```
- POST {localhost_url}/rest/V1/article
+ POST {domain_url}/rest/V1/article
 ```
 ```
 Raw json data
 
 {
-    article: {
-        title: 'test',
-        content: 'test'
+    "article": {
+        "title": "test",
+        "content": "test"
     }
 }
 ```
